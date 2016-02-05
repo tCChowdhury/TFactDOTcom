@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<?php
+	$mailSent = false;
+	$mailError = "";
+	//if "email" variable is filled out, send email
+	if (isset($_REQUEST['email']))  {
+		//Email information
+		$admin_email = "info@tfact.com";
+		$email = $_REQUEST['email'];
+		$subject = "WEB Contact Form"; //$_REQUEST['subject'];
+		$comment = $_REQUEST['message'];
+		
+		if (strlen($email) > 0 && strlen($comment) > 0) {
+			//send email
+			mail($admin_email, "$subject", $comment, "From:" . $email);
+
+			//Email response
+			//echo "Thank you for contacting us!";
+			$mailSent = true;
+		}
+		else {
+			$mailError = "To email and message are required";
+		}
+	}
+?>
+
 <head>
 
     <meta charset="utf-8">
@@ -15,6 +40,8 @@
             document.getElementById("content").style.display = "block";
         }//preloader
         window.onload = preloader;
+		
+		
 	</script>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
@@ -516,7 +543,25 @@
 			<div class="gap-50"></div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 animateup">
-                    <form role="form">
+					<?php
+						if($mailSent) { ?>
+
+						<div class="alert alert-success">
+						  Thank you for contacting TFact Inc.  We will be in touch.
+						</div>						
+												
+					<?php
+						}
+					?>
+					<?php
+						if ($mailError) { ?>
+						<div class="alert alert-danger">
+						  <?php echo $mailError; ?>
+						</div>
+					<?php	
+						}
+					?>
+                    <form role="form" method="POST">
                         <div class="row">
                             <div class="form-group col-xs-12 floating-label-form-group">
                                 <label for="name">Name</label>
@@ -797,7 +842,7 @@
 	</script>
 	
 	
-
+	
 
 </body>
 
