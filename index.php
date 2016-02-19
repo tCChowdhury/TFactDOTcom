@@ -51,7 +51,7 @@
     <!-- Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
-
+    
     <!-- IE8 support for HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -119,8 +119,8 @@
     <header class="home">
 		<div class="home_wrap">
 			<div class="container" style="padding-top: 60px">
-				<div class="row" style="margin-bottom: 20px;">
-					<img src="img/bg.jpg" style="width: 100px" alt="Tfact Inc"/>
+				<div class="row" style="margin-bottom: 20px; font-size: 60px;">
+					<span style="font-size: 82px;">T</span>FACT
 				</div>
 				<div class="row">
 					<div class="col-lg-12">
