@@ -842,8 +842,13 @@
 	</script>
 	
 	
-	
-
+	<?php
+	if (strlen($mailError) > 0) {
+	?>
+		<script type="text/javascript">
+			location.hash = "#contact";
+		</script>
+	<?php } ?>
 </body>
 
 </html>
