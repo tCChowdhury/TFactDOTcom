@@ -385,7 +385,7 @@
 								Software Development
 							</h4>
 							<p class="white">
-								We design and develope software applications to optimize the way you work!  We have software engineers that have been developing innovative software for years and are GREAT at what they do. They can work with many different technologies (ex. HTML, ASP, C++, JAVA, etc.). We can create any program that you can imagine. We will help you design the program to meet your needs, develop the application to run on any computer platform(s), install the necessary software(s) and/or component(s), make any necessary configurations to be sure the program works seamlessly within your computer environment, and will help train staff to make best use of the new software. 
+								We design and develop software applications to optimize the way you work!  We have software engineers that have been developing innovative software for years and are GREAT at what they do. They can work with many different technologies (ex. HTML, ASP, C++, JAVA, etc.). We can create any program that you can imagine. We will help you design the program to meet your needs, develop the application to run on any computer platform(s), install the necessary software(s) and/or component(s), make any necessary configurations to be sure the program works seamlessly within your computer environment, and will help train staff to make best use of the new software. 
 							</p>
 						</div>
 						<div class="service-item animateright">
@@ -850,5 +850,14 @@
 		</script>
 	<?php } ?>
 </body>
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-74044543-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </html>
