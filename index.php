@@ -584,7 +584,7 @@
                         <div class="row">
                             <div class="form-group col-xs-12">
                                 <button type="submit" class="btn btn-lg btn-success">Send</button>
-                                <div style="float: right; font-size: 50px;">OR&nbsp;&nbsp;&nbsp;&nbsp;CALL (818)203-3007</div>
+                                <div style="float: right; font-size: 50px;">OR&nbsp;&nbsp;&nbsp;&nbsp;CALL <a href="tel:8182033007" style="text-decoration: none; color: #950C01;">818-203-3007</a></div>
                             </div>
                         </div>
                     </form>
